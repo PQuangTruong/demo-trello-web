@@ -3,17 +3,21 @@ import { experimental_extendTheme as extendTheme } from "@mui/material/styles";
 
 // Create a theme instance.
 const theme = extendTheme({
+  size: {
+    navBarHeight: '50px',
+    boardBarHeight: '60px',
+  },
   colorSchemes: {
     light: {
       palette: {
         primary: teal,
         secondary: deepOrange,
       },
-      components: {
-        MuiCssBaseline: {
-          styleOverrides: "div {color:blue}",
-        },
-      },
+      // components: {
+      //   MuiCssBaseline: {
+      //     styleOverrides: "div {color:yellow}",
+      //   },
+      // },
     },
     dark: {
       palette: {
