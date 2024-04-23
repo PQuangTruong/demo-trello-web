@@ -11,10 +11,4 @@ function AppBar() {
         display: "flex",
         alignItems: "center",
       }}
-    >
-      NavBar <SelectMode />
-    </Box>
-  );
-}
-
 export default AppBar;
