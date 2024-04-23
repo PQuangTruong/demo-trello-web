@@ -12,7 +12,7 @@ function AppBar() {
         alignItems: "center",
       }}
     >
-      NavBar <SelectMode />
+      NavBar Hello<SelectMode />
     </Box>
   );
 }
