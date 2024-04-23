@@ -4,7 +4,7 @@ import { experimental_extendTheme as extendTheme } from "@mui/material/styles";
 // Create a theme instance.
 const theme = extendTheme({
   size: {
-    navBarHeight: '50px',
+    navBarHeight: '60px',
     boardBarHeight: '60px',
   },
   colorSchemes: {
