@@ -13,7 +13,7 @@ function BoardContent() {
         textAlign: "center",
       }}
     >
-      Contentt
+      Content
     </Box>
   );
 }
