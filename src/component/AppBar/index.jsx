@@ -20,32 +20,12 @@ import Profile from "./Menus/Profile";
 
 function AppBar() {
   return (
-    <Box
-      px={2}
-      sx={{
-        width: "100%",
-        height: (theme) => theme.size.navBarHeight,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-      }}
-    >
+    <Box px={2} sx={{ width: "100%",height: (theme) => theme.size.navBarHeight,display: "flex", alignItems: "center",justifyContent: "space-between"}} >
       <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
         <AppsIcon sx={{ color: "primary.main" }} />
         <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-          <SvgIcon
-            component={iconHeader}
-            inheritViewBox
-            sx={{ color: "primary.main" }}
-          />
-          <Typography
-            variant="span"
-            sx={{
-              color: "primary.main",
-              fontSize: "1.2rem",
-              fontWeight: "bold",
-            }}
-          >
+          <SvgIcon component={iconHeader} inheritViewBox sx={{ color: "primary.main" }} />
+          <Typography variant="span" sx={{ color: "primary.main", fontSize: "1.2rem", fontWeight: "bold", }} >
             Trello
           </Typography>
         </Box>
