@@ -34,6 +34,7 @@ function AppBar() {
         <AppsIcon sx={{ color: "primary.main" }} />
         <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
           <SvgIcon
+            fontSize="small"
             component={iconHeader}
             inheritViewBox
             sx={{ color: "primary.main" }}
@@ -66,15 +67,17 @@ function AppBar() {
 
         <Tooltip title="Notifications">
           <Badge color="secondary" variant="dot" sx={{ cursor: "pointer" }}>
-            <NotificationsIcon />
+            <NotificationsIcon
+              sx={{ cursor: "pointer", color: "primary.main" }}
+            />
           </Badge>
         </Tooltip>
 
         <Tooltip title="Help ?">
-          <HelpIcon sx={{ cursor: "pointer" }} />
+          <HelpIcon sx={{ cursor: "pointer", color: "primary.main" }} />
         </Tooltip>
 
-        <Profile/>
+        <Profile />
       </Box>
     </Box>
   );
