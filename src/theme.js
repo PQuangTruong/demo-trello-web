@@ -13,11 +13,6 @@ const theme = extendTheme({
         primary: teal,
         secondary: deepOrange,
       },
-      // components: {
-      //   MuiCssBaseline: {
-      //     styleOverrides: "div {color:yellow}",
-      //   },
-      // },
     },
     dark: {
       palette: {
@@ -27,6 +22,29 @@ const theme = extendTheme({
     },
   },
   components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        //https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+        body: {
+          "*::-webkit-scrollbar": {
+            width: "8px",
+            height: "8px",
+          },
+          /* Handle */
+          "*::-webkit-scrollbar-thumb": {
+            backgroundColor: "#bdc3c7",
+            borderRadius: "10px",
+            cursor:'pointer'
+          },
+          "*::-webkit-scrollbar-thumb:hover": {
+            backgroundColor: "#16a085",
+          },
+          "*::-webkit-scrollbar-track": {
+            boxShadow: "inset 0 0 5px grey",
+          },
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {

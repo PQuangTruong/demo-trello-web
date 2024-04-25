@@ -17,6 +17,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import Tooltip from "@mui/material/Tooltip";
 import HelpIcon from "@mui/icons-material/Help";
 import Profile from "./Menus/Profile";
+import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
 
 function AppBar() {
   return (
@@ -28,6 +29,8 @@ function AppBar() {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
+        gap: 2,
+        overflowX: 'auto'
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
@@ -50,18 +53,21 @@ function AppBar() {
             Trello
           </Typography>
         </Box>
-        <Workspaces />
-        <Recent />
-        <Start />
-        <Templates />
-        <Button variant="outlined">Create</Button>
+        <Box sx={{display: {xs:'none', md:'flex'} , gap:1}}>
+          <Workspaces />
+          <Recent />
+          <Start />
+          <Templates />
+          <Button variant="outlined" endIcon={<LibraryAddIcon/>}>Create</Button>
+        </Box>
       </Box>
       <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
         <TextField
           id="outlined-search"
-          label="Search field"
-          type="search"
+          label="Tìm kiếm ..."
+          type="Tìm kiếm"
           size="small"
+          sx={{minWidth:'120px'}}
         />
         <SelectMode />
 
@@ -84,3 +90,4 @@ function AppBar() {
 }
 
 export default AppBar;
+

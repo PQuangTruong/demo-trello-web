@@ -30,7 +30,7 @@ function Profile() {
           aria-expanded={open ? "true" : undefined}
         >
           <Avatar
-            src="https://media.licdn.com/dms/image/D560BAQE96KctT7x-iw/company-logo_200_200/0/1666170056423?e=2147483647&v=beta&t=VWwOyGELKPqLpkj7dbxaCDtWbhWKvp3akvhvMdHivy4"
+            src="https://media.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/October2021/meme-cheems-25.jpg"
             alt="Avatar"
             sx={{ width: 32, height: 32 }}
           />
