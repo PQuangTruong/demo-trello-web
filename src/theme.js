@@ -71,7 +71,7 @@ const theme = extendTheme({
             "&:hover fieldset": {
               borderWidth: "1px !important",
             },
-            "&.Mui-focused fieldset": {
+            "&.Mui-focused   fieldset": {
               borderWidth: "1px !important",
             },
           };
