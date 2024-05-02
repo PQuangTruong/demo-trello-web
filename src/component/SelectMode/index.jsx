@@ -18,17 +18,37 @@ function SelectMode() {
 
   return (
     <FormControl sx={{ minWidth: "120px" }} size="small">
-      <InputLabel id="select-light-mode">Mode</InputLabel>
+      <InputLabel
+        id="select-dark-light-mode"
+        sx={{
+          color: "white",
+          "&.Mui-focused": { color: "white" },
+        }}
+      >
+        Mode
+      </InputLabel>
       <Select
-        labelId="select-light-mode"
-        id="select-dark-mode"
+        labelId="select-dark-light-mode"
+        id="select-dark-light-mode"
         value={mode}
         label="Mode"
         onChange={handleChange}
+        sx={{
+          color: "white",
+          "&.Mui-focused": { color: "white" },
+          ".MuiOutlinedInput-notchedOutline": {
+            borderColor: "white",
+          },
+          "&:hover .MuiOutlinedInput-notchedOutline": {
+            borderColor: "white",
+          },
+          "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+            borderColor: "white",
+          },
+        }}
       >
         <MenuItem value="light">
           <Box
-            color={"primary.main"}
             style={{ display: "flex", alignItems: "center", gap: 8 }}
           >
             <LightModeIcon fontSize="small" /> Light
@@ -36,7 +56,6 @@ function SelectMode() {
         </MenuItem>
         <MenuItem value="dark">
           <Box
-            color={"primary.main"}
             sx={{ display: "flex", alignItems: "center", gap: 1 }}
           >
             <DarkModeIcon fontSize="small" /> Dark
@@ -44,7 +63,6 @@ function SelectMode() {
         </MenuItem>
         <MenuItem value="system">
           <Box
-            color={"primary.main"}
             sx={{ display: "flex", alignItems: "center", gap: 1 }}
           >
             <SettingsBrightnessIcon fontSize="small" /> System
